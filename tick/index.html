@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tick: Live Salary Counter — Support</title>
+<meta name="description" content="Help and contact for the Tick live salary counter iPhone app.">
+
+<style>
+:root {
+  --bg: #fdf6ec;
+  --surface: #ffffff;
+  --ink: #3d2214;
+  --muted: #805f4f;
+  --line: #e7d7c8;
+  --accent: #d9431f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171110;
+    --surface: #211917;
+    --ink: #f0e5de;
+    --muted: #b09a8e;
+    --line: #342723;
+    --accent: #ff8a5c;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 660px; margin: 0 auto; }
+header { padding: 64px 0 36px; border-bottom: 1px solid var(--line); margin-bottom: 36px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.015em; }
+.tag { color: var(--muted); margin: 8px 0 0; }
+h2 { font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 17px; margin: 26px 0 6px; }
+p, li { color: var(--ink); }
+.lede { color: var(--muted); }
+a { color: var(--accent); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 22px 0;
+}
+nav { margin-top: 22px; display: flex; gap: 18px; font-size: 15px; }
+footer {
+  margin-top: 56px; padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 15px;
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="data:image/png;base64,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" alt="" width="46" height="46" style="border-radius:11px;flex:none">
+        <div>
+          <h1>Tick</h1>
+          <p class="tag">Watch your pay add up.</p>
+        </div>
+      </div>
+      <nav><a href="index.html">Support</a><a href="privacy-policy.html">Privacy</a></nav>
+    </header>
+    <p class="lede">Something not behaving? Email me and I will reply. Most
+    questions are answered below first.</p>
+
+    <div class="card">
+      <strong>Email:</strong> <a href="mailto:kotsiosfireaxe@gmail.com">kotsiosfireaxe@gmail.com</a>
+    </div>
+
+    <h2>How the counter works</h2>
+    <p>Tick spreads your pay across the time you actually work. Count only
+    during your working hours and a day's pay is divided across those hours;
+    count around the clock and it is divided across all 24.</p>
+    <p>Gross and take-home are shown together on purpose. The gap between them
+    is the part you never see, and the Tax tab breaks it down.</p>
+
+    <h2>Common questions</h2>
+
+    <h3>The take-home figure does not match my payslip</h3>
+    <p>Your employer works tax out from allowances you have declared to them,
+    which never appear on a payslip, so no estimate can be exact. Turn on
+    Settings, <em>Use my payslip's tax</em> and enter the monthly figure from
+    your payslip. Tick uses that instead of estimating.</p>
+
+    <h3>I am not in Cyprus</h3>
+    <p>Settings, Tax, <em>Manage templates</em>. Duplicate a built-in to get an
+    editable copy, then set the bands, the ceilings and the caps for your
+    country. The whole app follows it, including what your health contribution
+    is called.</p>
+
+    <h3>My tax has bands, not one percentage</h3>
+    <p>That is what templates are for. <em>Flat rate</em> applies a single
+    percentage; any other template applies progressive bands the way a tax
+    table reads.</p>
+
+    <h3>The counter is not moving</h3>
+    <p>Check Settings, Schedule. Outside your working hours, or on a day that
+    is not counted, it holds still. <em>Count around the clock</em> makes it
+    run continuously.</p>
+
+    <h3>My running total resets on the wrong day</h3>
+    <p>Settings, <em>Counter resets</em>: the end of the month, a fixed day, or
+    the last working day of the month.</p>
+
+    <h3>This week looks bigger than this month</h3>
+    <p>It should not be. Both are clamped to your <em>Counting starts</em> date
+    in Settings, Dates. If that date is wrong, everything downstream is.</p>
+
+    <h3>I want my career total to be real, not estimated</h3>
+    <p>Summary, then <em>Pay history</em>. Add each month from its payslip.
+    Recorded months are never recalculated, so a later raise does not rewrite
+    your past.</p>
+
+    <h3>The widget is out of date</h3>
+    <p>It refreshes on a budget iOS controls, so it can lag by a few seconds.
+    Opening and leaving the app pushes it an update.</p>
+
+    <h3>I want a different language</h3>
+    <p>Settings, Appearance, Language. English, Greek, Turkish, Russian,
+    German, Romanian and Hebrew, independent of your phone's setting.</p>
+
+    <h3>It is not syncing between my devices</h3>
+    <p>There is no sync. Everything stays on the device you entered it on.</p>
+
+    <h3>I want to start over</h3>
+    <p>Settings, <em>Reset defaults</em>.</p>
+
+    <h2>Privacy</h2>
+    <p>The app collects nothing and sends nothing anywhere. The full policy is
+    on the <a href="privacy-policy.html">privacy page</a>.</p>
+
+    <footer>
+      Tick is an informational tool, not financial, tax or payroll advice.
+    </footer>
+  </div>
+</body>
+</html>
